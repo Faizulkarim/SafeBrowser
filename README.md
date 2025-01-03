@@ -5,6 +5,10 @@
 ## Description  
 This is an assessment project for **Kahf**, aimed at developing a browser that ensures ethical and responsible internet usage. The Kahf SafeBrowser leverages a DNS-based filtering system and external validation to block haram content effectively.  
 
+##Video
+
+https://github.com/user-attachments/assets/154ae12a-5a79-4ee2-9f90-7a3e1d934793
+
 ---
 
 ## Project Purpose  
@@ -43,7 +47,7 @@ To provide a secure and principled browsing experience by intercepting user inte
 
 ## Additional Implementation  
 ### Unit Testing  
-Comprehensive unit tests have been written to validate Program. 
+Comprehensive unit tests have been written to validate the Program. 
 ---
 
 ## Tech Stack  
@@ -55,5 +59,21 @@ Comprehensive unit tests have been written to validate Program.
 - **XCTest**: Framework used to implement and automate unit tests.  
 
 ---
+
+## Installation and Setup 
+
+### Prerequisites  
+1. **Xcode**: Ensure you have Xcode 14.0 or later installed.    
+3. **Swift Version**: Swift 5.7 or later.  
+
+### Clone the Repository 
+git clone https://github.com/username/Kahf-SafeBrowser.git
+
+###Navigate to the Package Dependencies
+- In Xcode, click on the project file in the **Project Navigator**.  
+- Select the **Package Dependencies** tab under the main project settings.
+- If any package dependencies are missing or not resolved:  
+ - Re-fetch any existing packages by clicking **File > Packages > Resolve Package Dependencies** in the top menu bar.  
+
 
 
