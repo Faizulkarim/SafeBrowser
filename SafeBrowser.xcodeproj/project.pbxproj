@@ -7,22 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA69C172D2075AE00A36A98 /* SafeBrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA69C162D2075AE00A36A98 /* SafeBrowserViewModel.swift */; };
+		1DA69C192D20766900A36A98 /* SafeWebview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA69C182D20766900A36A98 /* SafeWebview.swift */; };
 		1DAD80E12D1DBD0F0096A9D9 /* SafeBrowserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD80E02D1DBD0F0096A9D9 /* SafeBrowserApp.swift */; };
 		1DAD80E32D1DBD0F0096A9D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAD80E22D1DBD0F0096A9D9 /* ContentView.swift */; };
 		1DAD80E52D1DBD120096A9D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAD80E42D1DBD120096A9D9 /* Assets.xcassets */; };
 		1DAD80E82D1DBD120096A9D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAD80E72D1DBD120096A9D9 /* Preview Assets.xcassets */; };
+		1DB04EC82D25CE82000B5836 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 1DB04EC72D25CE82000B5836 /* NIO */; };
+		1DB04ECA2D25CEC5000B5836 /* NIOExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 1DB04EC92D25CEC5000B5836 /* NIOExtras */; };
+		1DB04ECC2D26FDDA000B5836 /* DnsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB04ECB2D26FDDA000B5836 /* DnsManager.swift */; };
+		1DB04ECE2D27DCEF000B5836 /* DNSResolverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB04ECD2D27DCEF000B5836 /* DNSResolverService.swift */; };
+		1DB04EDD2D2800EC000B5836 /* SafeBrowserViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB04EDC2D2800EC000B5836 /* SafeBrowserViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1DB04ED72D2800AD000B5836 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DAD80D52D1DBD0F0096A9D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DAD80DC2D1DBD0F0096A9D9;
+			remoteInfo = SafeBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1DA69C162D2075AE00A36A98 /* SafeBrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeBrowserViewModel.swift; sourceTree = "<group>"; };
+		1DA69C182D20766900A36A98 /* SafeWebview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeWebview.swift; sourceTree = "<group>"; };
 		1DAD80DD2D1DBD0F0096A9D9 /* SafeBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAD80E02D1DBD0F0096A9D9 /* SafeBrowserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeBrowserApp.swift; sourceTree = "<group>"; };
 		1DAD80E22D1DBD0F0096A9D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DAD80E42D1DBD120096A9D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DAD80E72D1DBD120096A9D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DB04ECB2D26FDDA000B5836 /* DnsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnsManager.swift; sourceTree = "<group>"; };
+		1DB04ECD2D27DCEF000B5836 /* DNSResolverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSResolverService.swift; sourceTree = "<group>"; };
+		1DB04ED32D2800AD000B5836 /* SafeBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB04EDC2D2800EC000B5836 /* SafeBrowserViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeBrowserViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1DAD80DA2D1DBD0F0096A9D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB04ECA2D25CEC5000B5836 /* NIOExtras in Frameworks */,
+				1DB04EC82D25CE82000B5836 /* NIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB04ED02D2800AD000B5836 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,10 +64,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DA69C142D20747100A36A98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DAD80E22D1DBD0F0096A9D9 /* ContentView.swift */,
+				1DA69C182D20766900A36A98 /* SafeWebview.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DA69C152D20758B00A36A98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1DA69C162D2075AE00A36A98 /* SafeBrowserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1DA69C1A2D2077D800A36A98 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1DB04ECB2D26FDDA000B5836 /* DnsManager.swift */,
+				1DB04ECD2D27DCEF000B5836 /* DNSResolverService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		1DAD80D42D1DBD0F0096A9D9 = {
 			isa = PBXGroup;
 			children = (
+				1DA69C1A2D2077D800A36A98 /* Service */,
 				1DAD80DF2D1DBD0F0096A9D9 /* SafeBrowser */,
+				1DB04ED42D2800AD000B5836 /* SafeBrowserTests */,
 				1DAD80DE2D1DBD0F0096A9D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1DAD80DD2D1DBD0F0096A9D9 /* SafeBrowser.app */,
+				1DB04ED32D2800AD000B5836 /* SafeBrowserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +112,9 @@
 		1DAD80DF2D1DBD0F0096A9D9 /* SafeBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				1DA69C152D20758B00A36A98 /* ViewModel */,
+				1DA69C142D20747100A36A98 /* View */,
 				1DAD80E02D1DBD0F0096A9D9 /* SafeBrowserApp.swift */,
-				1DAD80E22D1DBD0F0096A9D9 /* ContentView.swift */,
 				1DAD80E42D1DBD120096A9D9 /* Assets.xcassets */,
 				1DAD80E62D1DBD120096A9D9 /* Preview Content */,
 			);
@@ -65,6 +127,14 @@
 				1DAD80E72D1DBD120096A9D9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DB04ED42D2800AD000B5836 /* SafeBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DB04EDC2D2800EC000B5836 /* SafeBrowserViewModelTests.swift */,
+			);
+			path = SafeBrowserTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +153,31 @@
 			dependencies = (
 			);
 			name = SafeBrowser;
+			packageProductDependencies = (
+				1DB04EC72D25CE82000B5836 /* NIO */,
+				1DB04EC92D25CEC5000B5836 /* NIOExtras */,
+			);
 			productName = SafeBrowser;
 			productReference = 1DAD80DD2D1DBD0F0096A9D9 /* SafeBrowser.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1DB04ED22D2800AD000B5836 /* SafeBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DB04ED92D2800AD000B5836 /* Build configuration list for PBXNativeTarget "SafeBrowserTests" */;
+			buildPhases = (
+				1DB04ECF2D2800AD000B5836 /* Sources */,
+				1DB04ED02D2800AD000B5836 /* Frameworks */,
+				1DB04ED12D2800AD000B5836 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DB04ED82D2800AD000B5836 /* PBXTargetDependency */,
+			);
+			name = SafeBrowserTests;
+			productName = SafeBrowserTests;
+			productReference = 1DB04ED32D2800AD000B5836 /* SafeBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +192,10 @@
 					1DAD80DC2D1DBD0F0096A9D9 = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					1DB04ED22D2800AD000B5836 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1DAD80DC2D1DBD0F0096A9D9;
+					};
 				};
 			};
 			buildConfigurationList = 1DAD80D82D1DBD0F0096A9D9 /* Build configuration list for PBXProject "SafeBrowser" */;
@@ -111,11 +207,16 @@
 				Base,
 			);
 			mainGroup = 1DAD80D42D1DBD0F0096A9D9;
+			packageReferences = (
+				1DB04EC52D25CDF1000B5836 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				1DB04EC62D25CE11000B5836 /* XCRemoteSwiftPackageReference "swift-nio-extras" */,
+			);
 			productRefGroup = 1DAD80DE2D1DBD0F0096A9D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1DAD80DC2D1DBD0F0096A9D9 /* SafeBrowser */,
+				1DB04ED22D2800AD000B5836 /* SafeBrowserTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +231,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DB04ED12D2800AD000B5836 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +245,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB04ECC2D26FDDA000B5836 /* DnsManager.swift in Sources */,
+				1DA69C172D2075AE00A36A98 /* SafeBrowserViewModel.swift in Sources */,
 				1DAD80E32D1DBD0F0096A9D9 /* ContentView.swift in Sources */,
+				1DA69C192D20766900A36A98 /* SafeWebview.swift in Sources */,
 				1DAD80E12D1DBD0F0096A9D9 /* SafeBrowserApp.swift in Sources */,
+				1DB04ECE2D27DCEF000B5836 /* DNSResolverService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DB04ECF2D2800AD000B5836 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DB04EDD2D2800EC000B5836 /* SafeBrowserViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DB04ED82D2800AD000B5836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DAD80DC2D1DBD0F0096A9D9 /* SafeBrowser */;
+			targetProxy = 1DB04ED72D2800AD000B5836 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DAD80E92D1DBD120096A9D9 /* Debug */ = {
@@ -320,6 +448,42 @@
 			};
 			name = Release;
 		};
+		1DB04EDA2D2800AD000B5836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5WM29964H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizul.SafeBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeBrowser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafeBrowser";
+			};
+			name = Debug;
+		};
+		1DB04EDB2D2800AD000B5836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5WM29964H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.faizul.SafeBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeBrowser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SafeBrowser";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,7 +505,48 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1DB04ED92D2800AD000B5836 /* Build configuration list for PBXNativeTarget "SafeBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DB04EDA2D2800AD000B5836 /* Debug */,
+				1DB04EDB2D2800AD000B5836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DB04EC52D25CDF1000B5836 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		1DB04EC62D25CE11000B5836 /* XCRemoteSwiftPackageReference "swift-nio-extras" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-extras.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1DB04EC72D25CE82000B5836 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DB04EC52D25CDF1000B5836 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		1DB04EC92D25CEC5000B5836 /* NIOExtras */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DB04EC62D25CE11000B5836 /* XCRemoteSwiftPackageReference "swift-nio-extras" */;
+			productName = NIOExtras;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1DAD80D52D1DBD0F0096A9D9 /* Project object */;
 }
